@@ -278,8 +278,9 @@ header {
 .skills {
   padding: 40px 0;
 }
-.skills h2{
-  padding:10px 0;
+
+.skills h2 {
+  padding: 10px 0;
 }
 
 .skills_content {
@@ -290,11 +291,12 @@ header {
 .skill_left {
   width: 45%;
 }
-.skill_left p{
+
+.skill_left p {
   color: gray;
 }
 
-.skill_left button{
+.skill_left button {
   background-color: transparent;
   border: 1px solid var(--green-color);
   padding: 5px 15px;
@@ -302,21 +304,25 @@ header {
   font-weight: bold;
   font-size: 15px;
 }
+
 .skill_right {
   width: 45%;
 }
 
 .skill_right_item {
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
-.skill_right_item:nth-child(2) .front{
+
+.skill_right_item:nth-child(2) .front {
   width: 70%;
 }
-.skill_right_item:nth-child(4) .front{
+
+.skill_right_item:nth-child(4) .front {
   width: 60%;
 }
-.skill_right_item h5{
-  padding:0;
+
+.skill_right_item h5 {
+  padding: 0;
   margin: 0;
   margin-bottom: 7px;
 }
@@ -329,15 +335,59 @@ header {
 
 .front {
   font-size: 15px;
-  font-weight:bold;
+  font-weight: bold;
   text-align: right;
   width: 90%;
   background-color: var(--green-color);
   color: #eee;
-  padding-right:10px;
-
+  padding-right: 10px;
+}
 
 /* end skills */
+
+/* start resume */
+.resume {
+  padding: 40px;
+  text-align: center;
+  background-color: #ddd;
+  position: relative;
+}
+
+.resume p {
+  color: gray;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 25px;
+  font-size: 15px;
+
+
+}
+
+.resume_content {}
+
+.resume_content button {
+  background-color: transparent;
+  padding: 5px 15px;
+  border: 1px solid var(--green-color);
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+.resume::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #dddddd;
+  position: absolute;
+  transform: rotate(43deg);
+  left: 46%;
+  bottom: 3;
+  bottom: 3px;
+  z-index: -1
+}
+
+/* end resume */
 
 
 
