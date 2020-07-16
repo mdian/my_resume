@@ -14,7 +14,7 @@ start common style
 
 body {
   font-family: 'Rokkitt', serif;
-  height: 4000px;
+  height: 10000px;
 }
 
 .container {
@@ -389,55 +389,89 @@ header {
 
 /* end resume */
 /* start education */
-.education{
+.education {
   padding: 20px 0;
 
 
 }
-.education_content{
-display: flex;
-justify-content: space-between;
-border-bottom: 1px solid gray;
-}
-.education:last-of-type .education_content{
-  border-bottom:none;
-  }
-.education_content p{
-  color: gray;
-  font-size:15px ;
-  line-height: 1.6;
-  }
 
-  .education_content h5{
-    color: gray;
-    padding: 0;
-    margin: 10px 0;
-    }
-.left_col{
+.education_content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+ .last_one .education_content {
+  border-bottom: none;
+
+}
+
+.education_content p {
+  color: gray;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.education_content h5 {
+  color: gray;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.left_col {
   width: 45%;
 
 }
-.right_col{
-width: 45%;
+
+.right_col {
+  width: 45%;
 }
-.right_col_item{
-  margin-bottom:100px;
+
+.right_col_item {
+  margin-bottom: 100px;
 
 }
-.right_col_item span{
-background-color: var(--green-color);
-font-size: 14px;
-padding: 2px 5px;
-color: white;
-display: inline-block;
-margin-bottom: 10px;
+
+.right_col_item span {
+  background-color: var(--green-color);
+  font-size: 14px;
+  padding: 2px 5px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
 }
-.right_col_item h4{
+
+.right_col_item h4 {
   margin-bottom: 4px;
 
 }
+
 /* end education */
 
+/* start testmonial */
+.testimonial {
+  padding: 60px;
+  text-align: center;
+  background-color: #ddd;
+  position: relative;
+}
+
+.test_content p {
+  color: gray;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.test_content span{
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+
+
+}
+/* end testimonial */
 
 
 
