@@ -14,7 +14,6 @@ start common style
 
 body {
   font-family: 'Rokkitt', serif;
-  height: 10000px;
 }
 
 .container {
@@ -46,7 +45,7 @@ h2 {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(49, 26, 26, 0.5);
+  background-color: rgba(19, 10, 10, 0.5);
 }
 
 .upper {
@@ -401,7 +400,7 @@ header {
   border-bottom: 1px solid gray;
 }
 
- .last_one .education_content {
+.last_one .education_content {
   border-bottom: none;
 
 }
@@ -464,15 +463,164 @@ header {
   font-size: 15px;
   line-height: 1.7;
 }
-.test_content span{
+
+.test_content span {
   font-size: 15px;
   font-weight: bold;
   color: #555;
 
 
 }
+
 /* end testimonial */
 
+/* start portfoilio */
+.portfolio {
+  padding: 25px;
+
+}
+
+.portfolio p {
+  width: 60%;
+  color: gray;
+  margin: 30px auto;
+
+}
+
+.portfolio_content {
+  text-align: center;
+}
+
+.portfolio_images {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.portfolio_images_item {
+  width: 31%;
+  margin-bottom: 1%;
+  position: relative;
+}
+
+.portfolio_images_item:hover.portfolio_images_item .overlay {
+  display: block;
+}
+
+.portfolio_images_item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(106, 218, 106, 0.7);
+  display: none;
+}
+
+.portfolio_images_item .overlay .icon {
+  line-height: 200px;
+  color: aliceblue;
+}
+
+.portfolio_images_item img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* start contact me */
+.contact {
+  padding: 40px;
+  background-color: #252f31;
+
+}
+
+.contact p {
+  color: #888;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.contact span {
+  padding-right: 10px;
+}
+
+
+.contact h3,
+.contact span,
+.contact label {
+
+  color: white;
+}
+
+.conatact_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_contact {
+  width: 45%
+}
+
+.right_content {
+  width: 45%;
+}
+
+.right_content input[type="text"],
+.right_content input[type="email"],
+.right_content textarea {
+  background-color: #4b5557;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+}
+
+.right_content input[type="submit"] {
+  width: 30%;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #222;
+  color: white;
+  border: 0;
+  font-size: 14px;
+}
+
+/* end contact me */
+/* start footer */
+footer {
+  padding: 20px;
+  background-color: rgb(15, 14, 14);
+  text-align: center;
+}
+
+footer p {
+  color: #555;
+  font-size: 13px;
+}
+
+footer .icon {
+  background-color: #555;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 30px;
+  transition: all .3s ease-in-out;
+}
+
+footer .icon:hover {
+  color: #eee;
+
+}
+
+/* end footer */
 
 
 
@@ -491,9 +639,7 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+  body {}
 
   .container {
     grid-template-columns: 100%;
